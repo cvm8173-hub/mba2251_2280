@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/sengunthar-arts-and-science-college-namakkal-25785",
-  "https://www.shiksha.com/college/krishna-institute-of-management-meerut-30542",
-  "https://www.shiksha.com/college/gopabandhu-school-of-hotel-management-bhubaneswar-30910",
-  "https://www.shiksha.com/college/institute-of-integrated-marketing-communication-and-management-sarita-vihar-delhi-31535",
-  "https://www.shiksha.com/college/imperial-college-of-business-studies-icbs-jayanagar-jayanagar-bangalore-35985",
-  "https://www.shiksha.com/college/iimt-school-of-management-ism-gurgaon-36591",
-  "https://www.shiksha.com/college/karpaga-vinayaga-institute-of-management-tamil-nadu-other-72623",
-  "https://www.shiksha.com/college/kavitha-memorial-degree-and-pg-college-khammam-72633",
-  "https://www.shiksha.com/college/college-of-management-koparkhairane-mumbai-72941",
-  "https://www.shiksha.com/college/srinivasa-institute-of-management-kadapa-146175",
-  "https://www.shiksha.com/college/gayatri-college-for-pg-courses-srikakulam-146285",
-  "https://www.shiksha.com/college/best-international-business-school-h-s-r-layout-bangalore-151361",
-  "https://www.shiksha.com/college/aurora-s-school-of-business-studies-ramanthapur-hyderabad-156559",
-  "https://www.shiksha.com/college/veer-college-of-management-vidisha-157061",
-  "https://www.shiksha.com/college/dr-d-y-patil-school-of-business-management-pune-179833",
-  "https://www.shiksha.com/college/university-institute-of-management-thiruvananthapuram-194491",
-  "https://www.shiksha.com/college/t-john-group-of-institutions-powered-by-sunstone-bangalore-212285",
-  "https://www.shiksha.com/college/rathinam-technical-campus-powered-by-sunstone-coimbatore-239388",
-  "https://www.shiksha.com/college/institute-of-management-and-technology-imt-thrissur-25034",
-  "https://www.shiksha.com/college/indira-school-of-career-studies-navi-mumbai-mumbai-26560",
+  "https://www.shiksha.com/college/jaihind-college-of-management-bhopal-157089",
+  "https://www.shiksha.com/college/gyansthaly-mahavidhyalaya-jhansi-180071",
+  "https://www.shiksha.com/college/skyline-crs-kharadi-pune-181387",
+  "https://www.shiksha.com/college/vidyalankar-institute-of-technology-mumbai-189821",
+  "https://www.shiksha.com/college/siddhartha-women-s-degree-college-hyderabad-210341",
+  "https://www.shiksha.com/college/vikram-sarabhai-institute-of-engineering-technology-noida-greater-noida-231940",
+  "https://www.shiksha.com/college/veerappa-nisty-engineering-college-karnataka-other-47983",
+  "https://www.shiksha.com/college/sir-visvesvaraya-institute-of-technology-nashik-48404",
+  "https://www.shiksha.com/college/nova-college-of-engineering-and-technology-ibrahimpatnam-vijayawada-60853",
+  "https://www.shiksha.com/college/avanthi-institute-of-engineering-and-technology-andhra-pradesh-other-61127",
+  "https://www.shiksha.com/college/sri-krishnadevaraya-engineering-college-anantapur-61339",
+  "https://www.shiksha.com/college/anu-bose-institute-of-technology-khammam-62065",
+  "https://www.shiksha.com/college/netaji-school-of-management-nalgonda-62165",
+  "https://www.shiksha.com/college/vaageswari-institute-of-management-sciences-telangana-other-62187",
+  "https://www.shiksha.com/college/patronage-institute-of-management-studies-greater-noida-62681",
+  "https://www.shiksha.com/college/akole-taluka-education-societys-technical-campus-college-ahmednagar-64651",
+  "https://www.shiksha.com/college/narmadeshwar-management-college-lucknow-65533",
+  "https://www.shiksha.com/college/nmam-institute-of-technology-udupi-66357",
+  "https://www.shiksha.com/college/vivekanand-arts-sardar-dalipsingh-commerce-and-science-college-aurangabad-66859",
+  "https://www.shiksha.com/college/systel-institute-of-management-and-research-dhule-67095",
 ]
 
 
@@ -9242,7 +9242,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =2331
+    c_count =2451
 
     try:
         for base_url in BASE_URL:
