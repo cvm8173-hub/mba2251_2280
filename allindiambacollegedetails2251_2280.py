@@ -15,26 +15,36 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/jaihind-college-of-management-bhopal-157089",
-  "https://www.shiksha.com/college/gyansthaly-mahavidhyalaya-jhansi-180071",
-  "https://www.shiksha.com/college/skyline-crs-kharadi-pune-181387",
-  "https://www.shiksha.com/college/vidyalankar-institute-of-technology-mumbai-189821",
-  "https://www.shiksha.com/college/siddhartha-women-s-degree-college-hyderabad-210341",
-  "https://www.shiksha.com/college/vikram-sarabhai-institute-of-engineering-technology-noida-greater-noida-231940",
-  "https://www.shiksha.com/college/veerappa-nisty-engineering-college-karnataka-other-47983",
-  "https://www.shiksha.com/college/sir-visvesvaraya-institute-of-technology-nashik-48404",
-  "https://www.shiksha.com/college/nova-college-of-engineering-and-technology-ibrahimpatnam-vijayawada-60853",
-  "https://www.shiksha.com/college/avanthi-institute-of-engineering-and-technology-andhra-pradesh-other-61127",
-  "https://www.shiksha.com/college/sri-krishnadevaraya-engineering-college-anantapur-61339",
-  "https://www.shiksha.com/college/anu-bose-institute-of-technology-khammam-62065",
-  "https://www.shiksha.com/college/netaji-school-of-management-nalgonda-62165",
-  "https://www.shiksha.com/college/vaageswari-institute-of-management-sciences-telangana-other-62187",
-  "https://www.shiksha.com/college/patronage-institute-of-management-studies-greater-noida-62681",
-  "https://www.shiksha.com/college/akole-taluka-education-societys-technical-campus-college-ahmednagar-64651",
-  "https://www.shiksha.com/college/narmadeshwar-management-college-lucknow-65533",
-  "https://www.shiksha.com/college/nmam-institute-of-technology-udupi-66357",
-  "https://www.shiksha.com/college/vivekanand-arts-sardar-dalipsingh-commerce-and-science-college-aurangabad-66859",
-  "https://www.shiksha.com/college/systel-institute-of-management-and-research-dhule-67095",
+  "https://www.shiksha.com/college/hirachand-nemchand-college-of-commerce-hncc-solapur-20146",
+  "https://www.shiksha.com/university/srinivas-university-mangalore-64605",
+  "https://www.shiksha.com/college/bangalore-city-college-kalyan-nagar-3163",
+  "https://www.shiksha.com/college/sandip-institute-of-technology-and-research-centre-nashik-33253",
+  "https://www.shiksha.com/college/kj-s-educational-institute-kondhwa-pune-36114",
+  "https://www.shiksha.com/university/muhs-nashik-2878",
+  "https://www.shiksha.com/college/kakatiya-institute-of-technology-and-science-warangal-20412",
+  "https://www.shiksha.com/college/alliance-institute-of-hotel-management-visakhapatnam-25130",
+  "https://www.shiksha.com/college/rics-school-of-built-environment-amity-university-mumbai-panvel-53013",
+  "https://www.shiksha.com/college/bharat-institute-of-technology-meerut-19311",
+  "https://www.shiksha.com/college/hindu-college-of-management-guntur-62483",
+  "https://www.shiksha.com/college/faculty-of-social-science-dayalbagh-educational-institute-agra-53574",
+  "https://www.shiksha.com/college/anna-university-tirunelveli-regional-campus-62097",
+  "https://www.shiksha.com/college/bansal-group-of-institutes-bhopal-31007",
+  "https://www.shiksha.com/college/smt-radhikatai-pandav-college-of-engineering-srpce-nagpur-43262",
+  "https://www.shiksha.com/college/holy-mary-institute-of-technology-science-hyderabad-46532",
+  "https://www.shiksha.com/college/its-engineering-college-greater-noida-37467",
+  "https://www.shiksha.com/college/delhi-institute-of-higher-education-dihe-noida-180033",
+  "https://www.shiksha.com/college/marian-institute-of-management-idukki-73463",
+  "https://www.shiksha.com/college/hlm-group-of-institutions-ghaziabad-30509",
+  "https://www.shiksha.com/university/jain-deemed-to-be-university-kochi-215723",
+  "https://www.shiksha.com/college/excel-engineering-college-namakkal-60543",
+  "https://www.shiksha.com/college/visakha-institute-of-engineering-and-technology-visakhapatnam-43043",
+  "https://www.shiksha.com/college/j-s-kothari-business-school-dadar-west-mumbai-56937",
+  "https://www.shiksha.com/university/imu-imu-kolkata-indian-maritime-university-51900",
+  "https://www.shiksha.com/university/maharishi-university-of-information-technology-lucknow-67565",
+  "https://www.shiksha.com/college/gulzar-group-of-institutes-ludhiana-34430",
+  "https://www.shiksha.com/college/pune-district-education-association-s-college-of-engineering-hadapsar-36284",
+  "https://www.shiksha.com/college/niit-gurgaon-204781",
+  "https://www.shiksha.com/college/mvp-samaj-s-institute-of-management-research-technology-imrt-nashik-20760",
 ]
 
 
@@ -9242,7 +9252,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count =2451
+    c_count =691
 
     try:
         for base_url in BASE_URL:
